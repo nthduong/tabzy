@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./src/tabzy.css" />
+    </head>
+    <body>
+        <ul id="tabs">
+            <li class="tab-active"><a href="#tab-1">tab 1</a></li>
+            <li><a href="#tab-2">tab 2</a></li>
+            <li><a href="#tab-3">tab 3</a></li>
+        </ul>
+        <div id="tab-1">tab1-content</div>
+        <div id="tab-2">tab2-content</div>
+        <div id="tab-3">tab3-content</div>
+
+        <script src="./src/tabzy.js"></script>
+        <script>
+            const tabs = new Tabzy("#tabs");
+
+            
+        </script>
+    </body>
 </html>

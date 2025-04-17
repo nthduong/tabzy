@@ -8,7 +8,7 @@
     </head>
     <body>
         <ul id="tabs">
-            <li class="tab-active"><a href="#tab-1">tab 1</a></li>
+            <li><a href="#tab-1">tab 1</a></li>
             <li><a href="#tab-2">tab 2</a></li>
             <li><a href="#tab-3">tab 3</a></li>
         </ul>
@@ -16,11 +16,23 @@
         <div id="tab-2">tab2-content</div>
         <div id="tab-3">tab3-content</div>
 
+        <ul id="tabs2">
+            <li><a href="#tab-a">tab a</a></li>
+            <li><a href="#tab-b">tab b</a></li>
+            <li><a href="#tab-c">tab c</a></li>
+        </ul>
+        <div id="tab-a">taba-content</div>
+        <div id="tab-b">tabb-content</div>
+        <div id="tab-c">tabc-content</div>
+
         <script src="./src/tabzy.js"></script>
         <script>
-            const tabs = new Tabzy("#tabs");
-
-            
+            const tabs = new Tabzy("#tabs", {
+                remember: true,
+            });
+            const tabs2 = new Tabzy("#tabs2", {
+                remember: true,
+            });
         </script>
     </body>
 </html>
